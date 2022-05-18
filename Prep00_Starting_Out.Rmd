@@ -7,6 +7,7 @@ date: '2022-05-18'
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+<br>
 
 # Setup
 So, our current DM has announced that, for the foreseeable future, they won't have time to prep & run the campaign we'd started. It sucks, but that's life for you.
@@ -16,6 +17,8 @@ Fortunately, I'd already mentioned that, in such an event, I'd be willing to jum
 First session is in less than a week and, up to now, I've got nothing but a few idle musings.
 
 Crap.
+
+<br>
 
 # Situation Review
 A few words about the peculiarities of my table:
@@ -28,6 +31,8 @@ A few words about the peculiarities of my table:
 	- We recently had a discussion about what styles of campaigns they like, so I know what to aim for so that, even if not everyone gets their personal top preference, it's something they'll all get some enjoyment out of.
 
 **If those things are not clear without any doubt for your group, *talk about them* before doing anything else.**
+
+<br>
 
 # Nailing down a campaign setting
 Creativity is a cat.
@@ -42,6 +47,8 @@ Anything below, until I explicitly state otherwise, was just stuff I found mysel
 
 It is also worth noting that, while, below, I break those thoughts down in neatly, topic-focused section, *coming up* with that stuff was a disjointed, all-over-the-place process.
 
+<br>
+
 ## Step 1 - What do we actually need?
 Since I want to minimze prep, I'd like to go with some sort of open world campaign, where the party themselves will set their goals more often than not.
 
@@ -53,9 +60,11 @@ Like mentioned, I'd already idly mused about the setting a bit before and know w
 
 We'll *also* want a central conflict, some default source of tension. It'll not only lend our setting a distinct identity, but also serve as a crystallization seed for all kinds of narrative details, plots, NPC motivations etc.
 
-*Prep Time for this session*: None, this is stuff I already knew.
+**Prep Time for this session**: None, this is stuff I already knew.
 
-*Total Prep Time for next session:* None / 2 days of "mulling it over a bit"
+**Total Prep Time for next session:** None / 2 days of "mulling it over a bit"
+
+<br>
 
 ## Step 2 - Choosing a template to steal from
 The above isn't exactly big news. Countless authors have worked along those lines. Let's steal from them.
@@ -80,9 +89,11 @@ There were more details on my mind, but I'll bring them up when they're relevant
 
 The idea is that most of the campaign will take place in the occupied territories of the fallen empire, let's call them the Broken Lands for now. Lots of strife and limited efficacy of government means there'll be lots of space for individual heroism, evil warlords rising to power, magical artifacts waiting to be found and political powderkegs to be lit, defused or leveraged.
 
-*Prep Time for this section:* None, I've already read the book.
+**Prep Time for this section:** None, I've already read the book.
 
-*Total Prep Time for next session:* None / 2 days of "mulling it over a bit"
+**Total Prep Time for next session:** None / 2 days of "mulling it over a bit"
+
+<br>
 
 
 ## Step 3 - How do the PCs fit into all of this?
@@ -116,9 +127,11 @@ The baseline concept is that it's less strictly organized as a regular guild, an
 
 Until we come up with a better name, we'll just call it *The Guild*.
 
-*Prep Time for this section:* Maybe 15 minutes of random thoughts, strewn all over 2 days.
+**Prep Time for this section:** Maybe 15 minutes of random thoughts, strewn all over 2 days.
 
-*Total Prep Time for next session:* None / 2 days of "mulling it over a bit"
+**Total Prep Time for next session:** None / 2 days of "mulling it over a bit"
+
+<br>
 
 ## Step 4 - Adapting the setting for a DnD campaign
 ### Technology
@@ -140,9 +153,11 @@ However, I know that one of my players will definitely want to carry over a Tief
 
 Fortunately, the classic fits well here: A ~~Wizard~~ Cleric did it. Some of the imperial Clerics tried to "improve" people according to some divine ideal by creating new subraces. God & Cleric are gone, the races still exist. Done.
 
-*Prep Time for this section:* Maybe 30 minutes of random thoughts, strewn all over 2 days.
+**Prep Time for this section:** Maybe 30 minutes of random thoughts, strewn all over 2 days.
 
-*Total Prep Time for next session:* None / 2 days of "mulling it over a bit"
+**Total Prep Time for next session:** None / 2 days of "mulling it over a bit"
+
+<br>
 
 ## Step 5 - Writing a Primer
 *Now* it is time to actually sit down and do some actual work.
@@ -219,9 +234,11 @@ I get positive feedback quite quickly, so I know I can move on - even a
 
 from one of my players. Fortunately, I'm only stealing the setting, not the story, so I don't mind and am actually happy that my rambling reference was recognizable.
 
-*Prep Time for this section:* Maybe two hours, I tend to pour over long mails a lot.
+**Prep Time for this section:** Maybe two hours, I tend to pour over long mails a lot.
 
-*Total Prep Time for next session*: Two hours.
+**Total Prep Time for next session:** Two hours.
+
+<br>
 
 ## Unneccessary Step 6 - I ~~need~~ want a world map
 I know I don't *need* much of a map - a quick sketch of the immediate surroundings would do - but I'd stumbled across the amazing [Azgaar's Fantasy Map Generator](https://azgaar.github.io/Fantasy-Map-Generator/) and wanted to give it a whirl. I mean, how hard can it be?
@@ -266,15 +283,21 @@ The last step is to fiddle a bit with colours and fonts until the map looks *coo
 
 ![The full map](images/safia_fullmap.png)
 
-*Prep Time for this section*: Maybe three hours, although much of it was goofing around with the tool.
+**Prep Time for this section**: Maybe three hours, although much of it was goofing around with the tool.
 
-*Total Prep Time for next session:* Five hours.
+**Total Prep Time for next session:** Five hours.
+
+<br>
 
 ## No More Steps - we're done with the setting
 For now, at least. I'm confiedent I've got enough input swirling around in my mind that I can present the world as a living, breathing place, and improvise unplanned details as needed.
 
+<br>
+
 # Writing the First Adventure
 So... here we go. Everything so far pays into the campaign overall, but this is what we actually *need* to get started.
+
+<br>
 
 ## Step 1 - Getting a Rough Outline
 This is a part that, even if I'd tried to avoid it (I didn't), would have come up during my period of "mulling over" the campaign before actually sitting down and writing anything.
@@ -300,9 +323,11 @@ Now there's a lot of veterans in the area, many of them maimed, with no familiar
 
 I'm not thinking about a *solution* to the problem I've created, that's my players' job.
 
-*Prep Time for this section:* Beyond any musing had during the 2 days of "mulling things over a bit", maybe twenty minutes.
+**Prep Time for this section:** Beyond any musing had during the 2 days of "mulling things over a bit", maybe twenty minutes.
 
-*Total Prep Time before the next session:* Five hours, twenty minutes.
+**Total Prep Time before the next session:** Five hours, twenty minutes.
+
+<br>
 
 ## Step 2 - What Do we actually need?
 The first session will include some stuff that's not really gameplay:
@@ -323,9 +348,11 @@ Once that's done, I'll have them arrive in the starting town. Knowing them, thei
 
 That'll be probably sufficient for the first session, if they swerve wildly off-course, I'll just have to improvise.
 
-*Prep Time for this section:* None, like I've said, I know my players very well so the above is immediately obvious to me.
+**Prep Time for this section:** None, like I've said, I know my players very well so the above is immediately obvious to me.
 
-*Total Prep Time before next session:* Five hours, twenty minutes.
+**Total Prep Time before next session:** Five hours, twenty minutes.
+
+<br>
 
 ## Step 3 - Putting the adventure on the map
 First order of business is to nail down a starting town somewhere in the Broken Lands - so I switch on the biomes view on my *Azgaar's* world map, find the colour that seems to roughly correlate to a central european environment (which is where I want to start), zoom in and scroll around a bit.
@@ -358,12 +385,16 @@ The resulting map looks like the scribbles of a preschooler, but my players are 
 
 ![Local Map](images/renemi_localmap.png)
 
-*Prep Time for this section:* An hour.
+**Prep Time for this section:** An hour.
 
-*Total Prep Time before next session:* Six hours, twenty minutes.
+**Total Prep Time before next session:** Six hours, twenty minutes.
+
+<br>
 
 ## Step 4 - Finishing Touches
 There's a few more details I'd like to add, just to have them handy.
+
+<br>
 
 ### Digital Toolbelt
 
@@ -373,9 +404,11 @@ First, there's some tools I'd like to have within easy reach:
 - A [Random Name Generator](https://www.fantasynamegenerators.com/roman_names.php), never leave home without it.
 - An [Irosnworn Oracle Website](https://ironsworn.glitch.me/) - an awesome tool for on-the-spot creativity prompts.
 
-*Prep Time for this section:* Twenty minutes, most of it spent finding a nice Hexflower, trying to print it, finding out that my printer is possessed by the printer devil and deciding to make do without a printed version.
+**Prep Time for this section:** Twenty minutes, most of it spent finding a nice Hexflower, trying to print it, finding out that my printer is possessed by the printer devil and deciding to make do without a printed version.
 
-*Total Prep Time before next session:* Six hours, fourty minutes.
+**Total Prep Time before next session:** Six hours, fourty minutes.
+
+<br>
 
 ### Optional Sidekick
 My party's current PCs have no wilderness survival skill whatsoever. While this tells me that I shouldn't go overboard with wilderness content, travel *should* be perilious.
@@ -392,12 +425,16 @@ I imagine him as an old-ish unkempt Goblin drunk named Truush, who's only in it 
 
 If a player shows up with those skills covered, but they'll still try to get some expert advice on the area, Truush will be willing to give them some tips, but unwilling to accompany them on their dangerous antics.
 
-*Prep Time for this section:* Twenty minutes, most of it fiddling with the "full PC" version of Truush for funsies, before cutting off all the bells and whistles anyway.
+**Prep Time for this section:** Twenty minutes, most of it fiddling with the "full PC" version of Truush for funsies, before cutting off all the bells and whistles anyway.
 
-*Total Prep Time before next session:* Seven hours.
+**Total Prep Time before next session:** Seven hours.
+
+<br>
 
 ## No more steps - We're done
 Session is in just a few hours - I do some unrelated stuff, pack up, and head out.
+
+<br>
 
 # Prep Summary
 What we have:
@@ -408,14 +445,20 @@ What we have:
 - a rough idea of what the first session will probably entail
 - a bunch of misc stuff - maps and digital tools we probably won't need as of now
 
-*Total Prep Time before next session:* Seven hours of work, plus two days of "mulling things over for a while".
+**Total Prep Time before next session:** Seven hours of work, plus two days of "mulling things over for a while".
+
+(This is *a lot* of time, compared to the few hours of playtime we'll actually be seeing for the first session - but most of this wasn't just for the first session, but for the campaign as a whole, so I'm not too worried about it.)
 
 There's a ton of stuff I could have prepped. Some of this are elements I *know* I can come up with on the fly (i.e. NPCs). Some of it I just don't deem likely to come up, so I'm loathe to invest prep time. Ans some of it is stuff I *should* have prepped, but I'm out of time - and hey, no prep is ever perfect.
+
+<br>
 
 # Play Report
 So... how did it go?
 
 What went right, what went wrong, and, most importantly, *what did I have to make up on the spot*?
+
+<br>
 
 ## Meet the Heroes
 We have
@@ -427,9 +470,13 @@ We have
 
 (All names changed, obviously - let's hope I'll be able to keep them straight.)
 
+<br>
+
 ## House Rule Discussion
 
 I've got a list of house rules that have either already been established at our table or that I'd like to introduce for this campaign, so it's time to discuss them:
+
+<br>
 
 ### Longer Rest Times
 
@@ -440,6 +487,8 @@ Knowing my playstyle, I tend to do one, maybe two resource-draining encounters p
 With this in mind, I decree that a Short Rest is a night's sleep and a Long Rest is 24h of downtime (usable for downtime activities).
 
 Overall, since this doesn't alter the intended encounter density of the game, it causes some raised eyebrows, but goes through without much discussion.
+
+<br>
 
 ### Narrative Group Initiative
 
@@ -452,6 +501,8 @@ All I do is add a slight twist:
 
 Within their initiative, group members can go in any order. Issues concerning the duration of "until the beginning/end of your next turn" effects will be dealt with on an ad-hoc basis.
 
+<br>
+
 ### Power Attacks
 
 (This is stolen from [treantmonk](https://www.youtube.com/watch?v=PbsTKreJwsk))
@@ -459,6 +510,8 @@ Within their initiative, group members can go in any order. Issues concerning th
 Any PC can apply "-5 to attack, +10 to damage" to any attack made with the *Attack Action*.
 
 (If you want to do this with a Bonus Action Attack, get *Polearm Master* / *Crossbow Expert*.)
+
+<br>
 
 ## Introduction
 
@@ -475,6 +528,8 @@ Other than that, we nail down the in-world interpretation of everyone's backgrou
 - Other Guild members are being sent to other regions within the province.
 
 With that (and any questions about it) done, we jump into them arriving in the city.
+
+<br>
 
 ## Relevant Events
 
@@ -497,11 +552,17 @@ Overall, the (improvised) findings that might be relevant for the future are:
 
 Overall, it was a rather routined start (my players have done things like this a hundred times), but it served well in allowing them to find their feet and get an idea of both the adventure and the setting.
 
+<br>
+
 ## Oopsies
 
 Viewing this from a few weeks further down the road, I probably *should* have started the campaign with a strong scene - maybe a fight on the road. Nevertheless, it worked out well and can't be changed.
 
 Also, right during the session, I see that Renemi lacks easy access to fresh water. Oops. Fortunately, none of my players bring this up, so I'll have time to fix that.
+
+I brought a Weather Hex Flower with the intention of rolling on it, but completely forgot. No biggie, I'll try to remember next time - if I find that I consistently forget about it, I'll ditch it.
+
+<br>
 
 # Discussion
 
