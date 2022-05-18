@@ -1,1 +1,1 @@
-# prepdiary
+https://foyrkopp.github.io/prepdiary/index.html
