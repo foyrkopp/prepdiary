@@ -7,7 +7,7 @@ output:
 
 
 
-## What' This?
+## What's This?
 
 Just a bit of follow-along Prep for a Dungeons and Dragons game I'm running.
 
