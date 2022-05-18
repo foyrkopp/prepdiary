@@ -16,5 +16,5 @@ The idea is to give other DMs an over-the-shoulder view how others are prepping 
 
 ## Getting Started
 
-First time readers should probably start at [The Beginning](./docs/Prep00_Starting_Out.html). Otherwise, check out the "entries" menu at thet top.
+First time readers should probably start at [The Beginning](Prep00_Starting_Out.html). Otherwise, check out the "entries" menu at thet top.
 
