@@ -1,0 +1,20 @@
+---
+title: "Prep Diary"
+output: 
+  html_document:
+    toc: FALSE
+---
+
+
+
+## What' This?
+
+Just a bit of follow-along Prep for a Dungeons and Dragons game I'm running.
+
+The idea is to give other DMs an over-the-shoulder view how others are prepping their games.
+
+
+## Getting Started
+
+First time readers should probably start at [The Beginning](./docs/Prep00_Starting_Out.html). Otherwise, check out the "entries" menu at thet top.
+

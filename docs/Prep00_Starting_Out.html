@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+<meta name="date" content="2022-05-18" />
+
+<title>Starting Out</title>
+
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Prep Diary</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Entries
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="./Prep00_Starting_Out.html">Starting Out</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/githubusername/mywebsite">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Starting Out</h1>
+<h4 class="date">2022-05-18</h4>
+
+</div>
+
+
+<div id="setup" class="section level1">
+<h1>Setup</h1>
+<p>So, our current DM has announced that, for the foreseeable future,
+they won’t have time to prep &amp; run the campaign we’d started. It
+sucks, but that’s life for you.</p>
+<p>Fortunately, I’d already mentioned that, in such an event, I’d be
+willing to jump in with a simple homebrew campaign. So now I’ve got to
+put my money where my mouth is.</p>
+<p>First session is in less than a week and, up to now, I’ve got nothing
+but a few idle musings.</p>
+<p>Crap.</p>
+</div>
+<div id="situation-review" class="section level1">
+<h1>Situation Review</h1>
+<p>A few words about the peculiarities of my table:</p>
+<ul>
+<li>This’ll be an in-person game at a real table, not online</li>
+<li>We’ve played a group of PCs to lvl 6 through official modules and
+multiple players have voiced strong preferences to keep those PCs.</li>
+<li>We’ve played together for years, although not DnD.
+<ul>
+<li>I know decently well what each player likes to get out of a
+game</li>
+<li>I know their playstyle and won’t have to worry about potential
+weird/toxic behaviors random new players rarely but occasionally
+bring</li>
+<li>We recently had a discussion about what styles of campaigns they
+like, so I know what to aim for so that, even if not everyone gets their
+personal top preference, it’s something they’ll all get some enjoyment
+out of.</li>
+</ul></li>
+</ul>
+<p><strong>If those things are not clear without any doubt for your
+group, <em>talk about them</em> before doing anything else.</strong></p>
+</div>
+<div id="nailing-down-a-campaign-setting" class="section level1">
+<h1>Nailing down a campaign setting</h1>
+<p>Creativity is a cat.</p>
+<p>If you call it by name, stare at it and expect it to Come Here Right
+Now, it’ll ruffle it’s nose at you and then slink away into some shadow
+dimension.</p>
+<p>But if you ignore it for a while and do something
+unrelated-yet-interesting, it’ll suddenly - thump - land on your
+shoulder, curiously examining your doings, before walking all over your
+keyboard while shoving <del>it’s butt</del> The Eye of Sauron into your
+face.</p>
+<p>So I force myself to give it a day or two before actually sitting
+down and <em>doing</em> anything. Just juggling idle thoughts whenever
+I’m not too occupied with normal life stuff.</p>
+<p>Anything below, until I explicitly state otherwise, was just stuff I
+found myself thinking about while doing household chores, driving,
+walking, not paying attention in meetings etc.</p>
+<p>It is also worth noting that, while, below, I break those thoughts
+down in neatly, topic-focused section, <em>coming up</em> with that
+stuff was a disjointed, all-over-the-place process.</p>
+<div id="step-1---what-do-we-actually-need" class="section level2">
+<h2>Step 1 - What do we actually need?</h2>
+<p>Since I want to minimze prep, I’d like to go with some sort of open
+world campaign, where the party themselves will set their goals more
+often than not.</p>
+<p>This means they won’t be in permanent employment of a single faction
+(which can also be a fun campaign, but I did that recently), but
+indepent. And <em>this</em> means that, both to the heroes and to the
+people who might request their aid, just calling the cops to solve the
+problem should generally not be a feasible option.</p>
+<p>In my mind, there’s generally two ways to go about this - either the
+centralized power is antagonistic and you don’t <em>want</em> to involve
+them (your classic “corrupt state” scenario - <em>Shadowrun</em> and
+<em>Blades in the Dark</em> are based around this trope), or the
+centralized power is just not readily available (i.e. a frontier setting
+or one ravaged by some large scale desaster, war, etc.)</p>
+<p>Like mentioned, I’d already idly mused about the setting a bit before
+and know which book I want to adapt (see below) - and this particular
+one clearly lends itself to the latter approach.</p>
+<p>We’ll <em>also</em> want a central conflict, some default source of
+tension. It’ll not only lend our setting a distinct identity, but also
+serve as a crystallization seed for all kinds of narrative details,
+plots, NPC motivations etc.</p>
+<p><em>Prep Time for this session</em>: None, this is stuff I already
+knew.</p>
+<p><em>Total Prep Time for next session:</em> None / 2 days of “mulling
+it over a bit”</p>
+</div>
+<div id="step-2---choosing-a-template-to-steal-from"
+class="section level2">
+<h2>Step 2 - Choosing a template to steal from</h2>
+<p>The above isn’t exactly big news. Countless authors have worked along
+those lines. Let’s steal from them.</p>
+<p>In this particular case, I had already considered turning Robert
+Jackson Benett’s <em>City of Stairs</em> into a campaign setting
+somehow. (It’s a great book, I recommend to read it.)</p>
+<p>So now it’s time to actually do that, with the least amount of work
+possible.</p>
+<p>A few mangled words concerning what I remember and/or care about from
+the book(s) in terms of setting (sorry to the author):</p>
+<blockquote>
+<p>Imagine a theocracy that’s ruled not by the Clergy, but by their gods
+themselves. Physically manifest, very powerful gods, freely granting
+miracles, divine artifacts and powers to their flock, leading them in
+times of war, etc.</p>
+<p>Naturally, humans being humans, said theocracy wound up becoming an
+empire that brutally conquered, subjugated and exploited the other
+nations of the continent, who did not have this kind of divine
+backing.</p>
+<p>This was the status quo throughout virtually all of known history -
+unitl one of those subjugated people invented a weapon that can slay
+gods.</p>
+<p>One extremely ruthless liberation war and lots of fallen deities
+later, the former vasall states are flourishing, while the former empire
+is a failed state under foreign occupation by the very people they once
+subjugated themselves.</p>
+<p>Even beyond the devastations and population losses by war, virtually
+all of their infrastructure, once powered by miracles, has broken down.
+Divine artifacts have stopped working, been confiscated or became,
+bereft of all safeguards, too hazarduous to utilize.</p>
+</blockquote>
+<p>There were more details on my mind, but I’ll bring them up when
+they’re relevant - for now, this should suffice.</p>
+<p>The idea is that most of the campaign will take place in the occupied
+territories of the fallen empire, let’s call them the Broken Lands for
+now. Lots of strife and limited efficacy of government means there’ll be
+lots of space for individual heroism, evil warlords rising to power,
+magical artifacts waiting to be found and political powderkegs to be
+lit, defused or leveraged.</p>
+<p><em>Prep Time for this section:</em> None, I’ve already read the
+book.</p>
+<p><em>Total Prep Time for next session:</em> None / 2 days of “mulling
+it over a bit”</p>
+</div>
+<div id="step-3---how-do-the-pcs-fit-into-all-of-this"
+class="section level2">
+<h2>Step 3 - How do the PCs fit into all of this?</h2>
+<p>So now we have an environment that vaguely looks like a clichéd,
+blurred version of Afghanistan 2015.</p>
+<p>We also have a rough idea of what we imagine our party doing -
+exploring secrets, solving local problems, getting involved in political
+tensions etc.</p>
+<p>How do we enable them to do that? In my mind, the above will involve
+dealing with at least some of the local powers on a civilized and
+vaguely eye-to-eye level. Being hired, being invited to certain events,
+negotiating, stuff like that - even when the party starts out and has
+very little reputation.</p>
+<p><strong>Why would the mayor of Troubleville pay an advance to a bunch
+of strangers with no credentials or reputation and hope that they’ll
+actually go and take care of that banditry problem?</strong></p>
+<p>In a world where quest boards are commonplace, the hiring of aspiring
+heroes is a well established practice. This, however, is a setting where
+most heavily armed strangers are assumed to be just as likely to rob you
+as to help you - or, at the very, least, take the advance you’re paying
+them and vanish.</p>
+<p>(To many tables, this might seem like an irrelevant problem, but I
+know from experience that my players care about such small
+implausibilites - and this is a problem that seems fixable.)</p>
+<p>In short, I want a veneer of legitimacy for our party. Something
+that’d tell our hyptothetical mayor immediately that they can expect
+those budget Avengers to behave somewhat civilized, maybe even
+professional. And I don’t want to hinge said legitimacy on a single PC
+who might have a respected background.</p>
+<p>Fortunately, there’s a century old real-life solution to this
+problem: A guild.</p>
+<p>I don’t want to ordain from the bat that the PCs are a straight-out
+mercenary group (because we already did that in another campaign). And I
+don’t like the concept of an “adventurers guild” as seen in some tropes,
+because I don’t think “adventurer” is something most people in the
+setting would consider an actual profession. But maybe we can adapt
+those concepts.</p>
+<p>All I <em>really</em> need is the public knowledge that their guild
+will vouch for these people behaving in a somewhat civilzed fashion and
+honoring their contracts (or else the guild itself will come after
+them). It smells a bit “mercenary”, but I imagine it covering all sorts
+of specialist-for-hire, not just military ones.</p>
+<p>Why would our mayor trust that guild? Let’s make it an old, respected
+concept.</p>
+<p>Maybe the guild has existed, in one form or another, for centuries.
+It has fallen a bit by the wayside during the reign of the Empire
+(because the Empire had it’s own means of enforcing civilized behavior,
+adherence to contracts etc.). But the idea survived, in tales and maybe
+some derived traditions (i.e. the way certain oaths are sworn).</p>
+<p>And now, in a time when more immediate centralized authority is
+lacking, the guild has been revived and is experiencing sort of a
+renaissance.</p>
+<p>The baseline concept is that it’s less strictly organized as a
+regular guild, and more focused on an oath sworn on a code of conduct.
+Swear to uphold said code and you get to wear the badge, which people
+will recognize and respect. Learn of someone with the badge breaking the
+code and you’ll have to bring them to justice. Break the code yourself
+and the guild will send your peers after you.</p>
+<p>Until we come up with a better name, we’ll just call it <em>The
+Guild</em>.</p>
+<p><em>Prep Time for this section:</em> Maybe 15 minutes of random
+thoughts, strewn all over 2 days.</p>
+<p><em>Total Prep Time for next session:</em> None / 2 days of “mulling
+it over a bit”</p>
+</div>
+<div id="step-4---adapting-the-setting-for-a-dnd-campaign"
+class="section level2">
+<h2>Step 4 - Adapting the setting for a DnD campaign</h2>
+<div id="technology" class="section level3">
+<h3>Technology</h3>
+<p>In the books, the technology level is somewhere in the early 20th
+century, which is too much a headache for me in DnD terms.</p>
+<p>17th century sounds doable - saying that the victorious, “modern”
+states are routinely using flintlock weapons in their militaries, while
+those are rare and expensive in the Broken Lands, is a good baseline to
+give a “feel” to the state of technology.</p>
+</div>
+<div id="exploration" class="section level3">
+<h3>Exploration</h3>
+<p>While thinking about things, I stumble across a snag: I want my party
+to be able to explore places that are not yet (widely) known. But the
+Broken Lands are a former empire that was heavily populated for
+centuries - wouldn’t virtually all of the immediately exploring long be
+done? There should be detailed imperial maps, right?</p>
+<p>So… let’s say that the fall of the gods changed things somehow. Maps
+are no longer accurate. People remember things that aren’t true. Either
+reality or recorded information has been altered, I don’t need to decide
+which one yet, either way sounds cool.</p>
+</div>
+<div id="character-generation-options" class="section level3">
+<h3>Character Generation Options</h3>
+<p>Besides the virtual superpowers granted by the now extinct(?) deities
+of the empire, I imagine most cultures having access to “regular” divine
+magics, so we won’t do something drastic like banning Clerics.</p>
+<p>Concerning races, I’m a big fan of low-fantasy settings (and imagine
+this one as such), where I have trouble imagining most of the more
+exotic races fitting in.</p>
+<p>However, I know that one of my players will definitely want to carry
+over a Tiefling they’re currently playing, so we’ll need an idea of how
+those fit in.</p>
+<p>Fortunately, the classic fits well here: A <del>Wizard</del> Cleric
+did it. Some of the imperial Clerics tried to “improve” people according
+to some divine ideal by creating new subraces. God &amp; Cleric are
+gone, the races still exist. Done.</p>
+<p><em>Prep Time for this section:</em> Maybe 30 minutes of random
+thoughts, strewn all over 2 days.</p>
+<p><em>Total Prep Time for next session:</em> None / 2 days of “mulling
+it over a bit”</p>
+</div>
+</div>
+<div id="step-5---writing-a-primer" class="section level2">
+<h2>Step 5 - Writing a Primer</h2>
+<p><em>Now</em> it is time to actually sit down and do some actual
+work.</p>
+<p>In particular, my players need an elevator pitch for the campaign so
+that they can either Yay or Nay it and think about how either their
+existing charactes might fit in or what new character they might
+play.</p>
+<p>This is what I’m sending to my players:</p>
+<p>(Keep in mind that this message was written way earlier than the
+document you’re reading now, so some details are still in an earlier
+draft at this point.</p>
+<p>Also, don’t mind the occasionally wooden wording, this is a direct
+translation from another language and reads better in the original.</p>
+<p>Player names, where mentioned, have been changed. Duh.)</p>
+<blockquote>
+<p><strong>Short blurb concerning the setting:</strong></p>
+<p>For (very long), the dominating continental superpower was a
+theocracy that owed it’s supremacy to it’s deities who not only
+interevened directly and personally in the world, but also granted
+fantastical supernatural powers to their followers - a high fantasy
+church-state, that conquered and exploited their neighboring countries
+with superior divine magic.</p>
+<p>While those vasall states did not have equivalent divine support,
+they were much more technologically advanced.</p>
+<p>Twenty years ago, the most advanced vasall state (a fantasy version
+of the terran ~17th century, including “normal” magic) found a way to
+kill gods.</p>
+<p>The result was a long, bloody revolution with a predictable result,
+where the resentment of people subjugated for centuries broke free
+completely unchecked.</p>
+<p>This war ended fiteen years ago.</p>
+<p>While the liberated countries are busying themselves with a cultural
+and technological rennaissance, rather than working through the horrors
+of the war, the former territory of the collapsed theocracy is now
+formally a colony administrated by a coalition of former vasall states -
+and de facto a failed state, whose future is currently rather unclear:
+The Broken Lands.</p>
+<p><strong>Short hook for the player characters:</strong></p>
+<p>The setting for most of the campaign will, obviously, be the
+territory of the former theocracy.</p>
+<p>The player characters are fortune-seekers (or mercenaries) that have
+banded together to, for whatever personal reasons, find fame, riches,
+power or knowledge in the Broken Lands.</p>
+<p>Thus, you’ll often find yourself solving the “problem of the week”
+(and being paid for it), but there’ll also be plenty promising
+opportunites to pursue on your own initiative, if you care to do so -
+and, with time, an overarching plot should emerge as well.</p>
+<p>You’re not just a bunch of random Bobs with big blades and/or wands,
+but members of a loose, but far-reaching guild of
+fortune-seekers/mercenaries granting you a certain status: To become a
+member of the guild, one has to commit to a basic code of conduct and,
+in return, gets legal, organisational and, in an emergency, even
+financial backing. Whoever acts against the code, will be held
+accountable by the guild itself.</p>
+<p>Due to the aforementioned code of conduct, and because the guild is
+not directly associated with any faction of the war, members are
+awareded a baseline of respect in most regions and are often hired to
+solve special problems.</p>
+<p>The important takeaway here is that the guild won’t dictate your
+goals or define your life, but it grants you a baseline of
+legitimacy.</p>
+<p>(If any of you, i.e. Nessia, would rather be employed by a noble
+house instead of being an indepent guild member, this would be fine as
+well. I’d just like to avoid you being a band of heavily armed Vandals
+without any advocate.)</p>
+<p><strong>Short draft of mechanical boundaries, this is
+negotiable:</strong></p>
+<p>I’d like to downgrade the group to level three. I know, I know,
+higher levels = more cool stuff - but if we want to play somewhat
+consistentlly in this scenario, I’d prefer it if you don’t already start
+out as heavyweights and level three seems like a good compromise for
+this (compared to level 1).</p>
+<p>If you want to continue playing your old PC, this is (obviously)
+possible. If you want to keep playing them, but adapt some mechanical
+details, ditto.</p>
+<p>If someone would like to play a new PC:</p>
+<ul>
+<li><p>For reasons of fairness, I’d keep the free level one feat the
+established PCs already have, but it’s explictly possible to leave this
+one open and learn a fitting feat later, during actual
+gameplay.</p></li>
+<li><p>The rule “Customize your Origin” (from one of the newer books) is
+permitted: Whoever wants, may move the ability bonuses of their race to
+another ability.</p></li>
+<li><p>Monk and Sorcerer will get a few bonuses to lift them to the
+level of other classes. If anyone wants to play one of those, talk to
+me, I wont be putting all of this in here. (Kai: For Kristoff, If you
+want to keep him, I’ll type this into a separate mail.)</p></li>
+<li><p>The classes Twilight Cleric and Peace Cleric can’t be
+chosen.</p></li>
+<li><p>No multiclassing at the beginning of the game. Later, during the
+campaign, it MAY be possible, but only if there’s an opportunity within
+the narrative.</p></li>
+<li><p>“General” civilization consists of the “human-like” races (mostly
+Humans, but also Dwarves, Elfs, Halflings, Gnomes, Goliaths, Firbolgs
+etc.) and the assorted goblinoids. All other races (ecemptions
+negotiable) are the result of theocratic attempts to “improve” existing
+races and will have to live with corresponding prejudice, but can
+overcome it. Dragonborn and Tieflings constitute the largest populations
+of those “Godlings” in the Broken Lands.</p></li>
+</ul>
+<p>Should you have an awesome concept that clashes with those
+boundaries, speak up, at this time everything is negotiable.</p>
+<p>(From where I’m standing, you don’t need to coordiniate for a
+“balanced” party. If we wind up with an all-Rogue or all-Cleric party,
+we’ll find ways to make it work.)</p>
+</blockquote>
+<p>I get positive feedback quite quickly, so I know I can move on - even
+a</p>
+<blockquote>
+<p>Yay, City of Stairs!</p>
+</blockquote>
+<p>from one of my players. Fortunately, I’m only stealing the setting,
+not the story, so I don’t mind and am actually happy that my rambling
+reference was recognizable.</p>
+<p><em>Prep Time for this section:</em> Maybe two hours, I tend to pour
+over long mails a lot.</p>
+<p><em>Total Prep Time for next session</em>: Two hours.</p>
+</div>
+<div id="unneccessary-step-6---i-need-want-a-world-map"
+class="section level2">
+<h2>Unneccessary Step 6 - I <del>need</del> want a world map</h2>
+<p>I know I don’t <em>need</em> much of a map - a quick sketch of the
+immediate surroundings would do - but I’d stumbled across the amazing <a
+href="https://azgaar.github.io/Fantasy-Map-Generator/">Azgaar’s Fantasy
+Map Generator</a> and wanted to give it a whirl. I mean, how hard can it
+be?</p>
+<p>Well, harder than I thought (I should have known), but still fairly
+easy overall.</p>
+<p>(This is not a complete waste of time, though. Auto-generated content
+is not always immediately usable by itself, but it’s great fuel for
+creativity.)</p>
+<p>After familiarizing myself and fiddling a bit with the menus, I
+vaguely remember that, in the books, the leading state of the rebellious
+alliance was situated on a peninsula, which gives me a starting point -
+I switch the <em>heigthmap</em> option to “peninsula” and generate a few
+maps until I find one where the overall layout looks of the nations
+looks plausible.</p>
+<p>Then I discover the “Cultures” layer, which defines the naming of
+places and is great - but it triggers me to think about what the
+different cultures should “feel” like.</p>
+<p>Before doing that, I regenerate the culture layer, until one culture
+massively dominates most of the continental regions, this’ll be the
+imperial culture (which spread all over the place).</p>
+<div class="figure">
+<img src="images/safia_cultures.png" alt="" />
+<p class="caption">Culture Map</p>
+</div>
+<p>I like the idea of the old Empire being roman-themed, because that
+felt fitting to me in Skyrim, so I lock that in as their namespace.</p>
+<p>The algorithm placed a dash of a people with a finnic namespace up
+north, who were part of the empire, that’s interesting. Did they somehow
+preserve a cultural identity? If so, how? Or did just their naming
+traditions endure? Either way, I’m keeping them.</p>
+<p>Then I just slot in stuff that seems fun and plausible. A germanic
+namebase for the coastal region where a good chunk of the former vasall
+states are situated (including the aforementioned peninsula) and a greek
+one for a large southern island, that should do it - no need to go
+overboard.</p>
+<p>Lastly, I regenerate nations (“states”), provinces, rivers and cities
+(“burgs”) again to apply the new namespaces, then do it over a few times
+until it looks right.</p>
+<div class="figure">
+<img src="images/safia_nations.png" alt="" />
+<p class="caption">Nation Map</p>
+</div>
+<p>Somehow, the algorithm tends to split the region I consider the
+Empire’s heartlands into two states (a very large and a large one),
+which frustrates me a bit, until I decide to embrace it.</p>
+<p>Maybe part of the empire seceeded during the rebellion, switching
+sides to ensure their survival? At this point, their gods would already
+have fallen and the Alliance would be distrustful of their loyalty, but
+the remains of their government would be able to stay in power, a thing
+that governments seem to prefer doing. So let’s consider that canon for
+now.</p>
+<p>Done.</p>
+<p>The tool also has a bunch of stuff about diplomatic relationships,
+where I can define what state A thinks about state B, about where which
+military units are stationed, historical wars and much more, but I leave
+all of that alone.</p>
+<p>I <em>do</em> use it as an opportunity to think about the current
+relations of the Alliance members, though.</p>
+<p>Making them all a big, happy family would be a bit… <em>Star
+Trek</em>, so I insert some drama - <em>this</em> smallish country over
+here is actually a freshly seceeded province of <em>that</em> state and
+<em>those</em> neighbours helped them along. <em>These</em> people here
+and <em>those</em> over there both want to colonize (and maybe annex)
+that island down <em>here</em>, which the algorithm decreed to be
+virtually unpopulated, for it’s resources - stuff like that.</p>
+<p>I don’t bother writing any of this down, having it sloshing around in
+the back of my head will be enough until i need it to draw inspiration
+from.</p>
+<p>The last step is to fiddle a bit with colours and fonts until the map
+looks <em>cool</em>:</p>
+<div class="figure">
+<img src="images/safia_fullmap.png" alt="" />
+<p class="caption">The full map</p>
+</div>
+<p><em>Prep Time for this section</em>: Maybe three hours, although much
+of it was goofing around with the tool.</p>
+<p><em>Total Prep Time for next session:</em> Five hours.</p>
+</div>
+<div id="no-more-steps---were-done-with-the-setting"
+class="section level2">
+<h2>No More Steps - we’re done with the setting</h2>
+<p>For now, at least. I’m confiedent I’ve got enough input swirling
+around in my mind that I can present the world as a living, breathing
+place, and improvise unplanned details as needed.</p>
+</div>
+</div>
+<div id="writing-the-first-adventure" class="section level1">
+<h1>Writing the First Adventure</h1>
+<p>So… here we go. Everything so far pays into the campaign overall, but
+this is what we actually <em>need</em> to get started.</p>
+<div id="step-1---getting-a-rough-outline" class="section level2">
+<h2>Step 1 - Getting a Rough Outline</h2>
+<p>This is a part that, even if I’d tried to avoid it (I didn’t), would
+have come up during my period of “mulling over” the campaign before
+actually sitting down and writing anything.</p>
+<p>What do we actually want?</p>
+<ul>
+<li>Since our players know virtually nothing yet about the local events,
+locations etc. (as of now, neither do we) or even about the motivations
+of the other characters, it’d be difficult for them to define an
+opportunity to pursue on their own - so this’ll be a job given to them
+by an NPC</li>
+<li>A thing that’s important to their characters, but, as of yet, poorly
+defined, is The Guild, so lets make it be relevant to the job</li>
+</ul>
+<p>From here, an obvious idea emerges - we, so far, know of only one
+occasion where The Guild takes direct action: When one of their members
+goes against The Code.</p>
+<p>We have not yet defined the The Code yet, so, at least viewed from a
+distance, the deed needs to be rather unambiguously bad. Let’s say a
+member of The Guild has established somethelves as a local warlord and
+taken up banditry, taking people’s stuff by force etc.</p>
+<p>I’m imagining guild member that came to the region from outside,
+maybe originating from somewhere in the Alliance, and going… bad,
+somehow.</p>
+<p>Let’s call them… Johann Brahm. (During the first session, my players
+will be quick to point out that my subconscious probably meant <a
+href="https://en.wikipedia.org/wiki/Johannes_Brahms">Johannes
+Brahms</a>, but hey, what’s done is done.) Being a bandit chief /
+warlord now, he likes to call himself “the Iron Johan”.</p>
+<p>I don’t see such a person waking up one morning and deciding to take
+over all the small bandit groups that undoubtedly already exist in the
+area - no, something much more plausible (to me) would be if he’d, for
+example, aligned himself with a part of the population that is usually
+destitute and whose most common reliable skill is violence - and then,
+things escalated somehow to a point where he took off with a bunch of
+them to “find a better life” or something, and ultimately, it all ended
+in banditry.</p>
+<p>Such a group is easy to come up with - there <em>was</em> a war,
+after all. Let’s say that there was am imperial army hailing from
+another province in the region. They lost their battles and, when the
+war ended, many did not find their way home (or their home was lost to
+either the ravages of war or the slight… <em>reorganisation</em> of maps
+that followed The Fall).</p>
+<p>Now there’s a lot of veterans in the area, many of them maimed, with
+no familiar ties to the local population, that are desperately trying to
+stay afloat in harsh times. The locals generally don’t like them very
+much (this is the army that failed to protect them, now they’re an
+economical burden and also, they’re basically foreigners), so it’s easy
+to imagine how the most desperate of them might be willing to take to
+banditry.</p>
+<p>I’m not thinking about a <em>solution</em> to the problem I’ve
+created, that’s my players’ job.</p>
+<p><em>Prep Time for this section:</em> Beyond any musing had during the
+2 days of “mulling things over a bit”, maybe twenty minutes.</p>
+<p><em>Total Prep Time before the next session:</em> Five hours, twenty
+minutes.</p>
+</div>
+<div id="step-2---what-do-we-actually-need" class="section level2">
+<h2>Step 2 - What Do we actually need?</h2>
+<p>The first session will include some stuff that’s not really
+gameplay:</p>
+<ul>
+<li>Describing the setting in broad strokes and answering questions, so
+the players will have a rough idea of what their PCs know.</li>
+<li>Going over character choices (<strong>this should usually be done
+separately</strong>, but I know my players very well.)</li>
+<li>Giving them an intro of where they are and and what their initial
+task is.</li>
+</ul>
+<p>Once that’s done, I’ll have them arrive in the starting town. Knowing
+them, their first orders of business will probably look something like
+this:</p>
+<ul>
+<li>verify some stuff about their understanding of the town with me</li>
+<li>find a place to sleep</li>
+<li>do some legwork and try to unearth some details about the Iron Johan
+<ul>
+<li>they’ll definitely try to talk to whoever is in charge here</li>
+<li>they’ll try to get their hands on a map</li>
+</ul></li>
+<li>formulate a basic plan for their next steps
+<ul>
+<li>hire a guide, if necessary</li>
+</ul></li>
+</ul>
+<p>That’ll be probably sufficient for the first session, if they swerve
+wildly off-course, I’ll just have to improvise.</p>
+<p><em>Prep Time for this section:</em> None, like I’ve said, I know my
+players very well so the above is immediately obvious to me.</p>
+<p><em>Total Prep Time before next session:</em> Five hours, twenty
+minutes.</p>
+</div>
+<div id="step-3---putting-the-adventure-on-the-map"
+class="section level2">
+<h2>Step 3 - Putting the adventure on the map</h2>
+<p>First order of business is to nail down a starting town somewhere in
+the Broken Lands - so I switch on the biomes view on my
+<em>Azgaar’s</em> world map, find the colour that seems to roughly
+correlate to a central european environment (which is where I want to
+start), zoom in and scroll around a bit.</p>
+<p>Ultimately I find a nice town at the edge of my preferred biome,
+close to the open grassland, at the end of a trade route that seems like
+what I need. The algorithm named it <em>Renemi</em>, which’ll do.</p>
+<p><em>Azgaar’s Fantasy Map Generator</em> is linked with
+<em>another</em> great map generator used for city maps, <a
+href="https://watabou.github.io/city-generator/?size=15&amp;seed=1027015709&amp;greens=0&amp;farms=1&amp;citadel=1&amp;urban_castle=0&amp;plaza=1&amp;temple=0&amp;walls=1&amp;shantytown=1&amp;coast=0&amp;river=1&amp;gates=-1">Watabou’s
+Medieval City Generator</a> and has already linked a city map for us. I
+fiddle with the generator’s settings a bit and refresh the map until I’m
+happy, then change the link to my new version. This’ll be helpful for
+the first session, but it’s only a bonus and not crucial.</p>
+<div class="figure">
+<img src="images/renemi.png" alt="" />
+<p class="caption">Renemi</p>
+</div>
+<p>When thinking about the regional map (which is the only map I
+<em>actually</em> need), I completely fail to realize that watabou has
+great generators for those as well (I’ll learn about that later), so I
+just take out a sheet of blank paper and a pen.</p>
+<p>Looking at the zoomed-in world map, I put in Renemi on the eastern
+side, the trade route terminating there (so - a road) leading off the
+map and a meandering, line where the grasslands seem to begin -
+everything below that line is forests, meadows etc.</p>
+<p>Now let’s fill that with a bit of stuff.</p>
+<p>Obviously, the party will want to know where the Iron Johann’s raids
+are occuring.</p>
+<p>Logistically, they’ll need to happen some place where there’s stuff
+worth taking. I know that there’s a larger city, Castrum (the province’s
+capital) further off my map to the northwest, but, for some reason, the
+world map algorithm put no direct trade route leading there - so I’m
+inventing one, heading north into the plains and then turning
+northwest.</p>
+<p>I add a smaller city in the plains to that route, imagining it to
+trade in lots of grassland goods (wool, mammoth tusks and whatnot) and
+add a river cutting through the map from south to north to supply it
+with water. Reserving the roman naming scheme for places of imperial
+importance, I name the river Immel and the town Immelgard.</p>
+<p>Also, two villages - Isenfall directly on the river, Bluewater at the
+like-named lake, who’s outflow connects to the Immel. The latter will be
+the place where Johann Brahm was gainfully employed before things went
+south, mostly because i need to put that pin <em>somewhere</em>, after
+all.</p>
+<p>There’s still a bit too many empty spaces on the map, so I add a bog
+somewhere in the vicinity of the river and a mysterious-yet-dangerous
+place of interest, a devastated forest region of the
+no-one-who-went-there-came-back category I’m callin Worldsend, at the
+very west.</p>
+<p>That’ll do - no need in overdoing it, just enough to make the map not
+seem empty and seed some stuff for the future.</p>
+<p>The resulting map looks like the scribbles of a preschooler, but my
+players are used to that kind of stuff.</p>
+<div class="figure">
+<img src="images/renemi_localmap.png" alt="" />
+<p class="caption">Local Map</p>
+</div>
+<p><em>Prep Time for this section:</em> An hour.</p>
+<p><em>Total Prep Time before next session:</em> Six hours, twenty
+minutes.</p>
+</div>
+<div id="step-4---finishing-touches" class="section level2">
+<h2>Step 4 - Finishing Touches</h2>
+<p>There’s a few more details I’d like to add, just to have them
+handy.</p>
+<div id="digital-toolbelt" class="section level3">
+<h3>Digital Toolbelt</h3>
+<p>First, there’s some tools I’d like to have within easy reach:</p>
+<ul>
+<li>A <a
+href="https://www.reddit.com/r/osr/comments/omtd4g/4_season_weather_table_hex_easy_and_logical/">Weather
+Hexflower</a> - I like introducing <em>some</em> unexpected elements
+into my stories, both as creativity seeds and as a reminder to my
+players that the world doesn’t care about their plans and this’ll do
+nicely.</li>
+<li>A <a
+href="https://www.fantasynamegenerators.com/roman_names.php">Random Name
+Generator</a>, never leave home without it.</li>
+<li>An <a href="https://ironsworn.glitch.me/">Irosnworn Oracle
+Website</a> - an awesome tool for on-the-spot creativity prompts.</li>
+</ul>
+<p><em>Prep Time for this section:</em> Twenty minutes, most of it spent
+finding a nice Hexflower, trying to print it, finding out that my
+printer is possessed by the printer devil and deciding to make do
+without a printed version.</p>
+<p><em>Total Prep Time before next session:</em> Six hours, fourty
+minutes.</p>
+</div>
+<div id="optional-sidekick" class="section level3">
+<h3>Optional Sidekick</h3>
+<p>My party’s current PCs have no wilderness survival skill whatsoever.
+While this tells me that I shouldn’t go overboard with wilderness
+content, travel <em>should</em> be perilious.</p>
+<p>Fortunately, I know that <em>they</em> know this. I also know that,
+unless one of them shows up with a freshly generated wilderness
+specialist, they’ll try to hire a local one.</p>
+<p>So let’s sketch one out, just in case. And make them at least
+<em>somewhat</em> combat capable - they’ll probably accompany the group
+for a while and should survive a standard encounter.</p>
+<p>I don’t like to use a Ranger, because I don’t want the Sidekick to
+have cool spells. I don’t want to use a Rogue, because Rogues can be
+fairly strong before level 5 and we already have a Rogue.</p>
+<p>I’ve got a ranged Fighter concept lying around, a Goblin Battlemaster
+Archer based on using ranged maneuvers from hiding. Let’s remove the
+Battlemaster stuff but keep the racial <em>Cunning Action</em>, make
+them a level lower than the party and refocus the skills on Survival,
+Nature and Medicine.</p>
+<p>I imagine him as an old-ish unkempt Goblin drunk named Truush, who’s
+only in it for the booze money, won’t risk his hide for the party, hides
+throughout combat (although may occasionally shoot his shortbow), but is
+knowledgeable about the area, the main roads, the animals, common
+monsters and whatnot and, above all, affordable with a reputation for
+being somewhat reliable.</p>
+<p>If a player shows up with those skills covered, but they’ll still try
+to get some expert advice on the area, Truush will be willing to give
+them some tips, but unwilling to accompany them on their dangerous
+antics.</p>
+<p><em>Prep Time for this section:</em> Twenty minutes, most of it
+fiddling with the “full PC” version of Truush for funsies, before
+cutting off all the bells and whistles anyway.</p>
+<p><em>Total Prep Time before next session:</em> Seven hours.</p>
+</div>
+</div>
+<div id="no-more-steps---were-done" class="section level2">
+<h2>No more steps - We’re done</h2>
+<p>Session is in just a few hours - I do some unrelated stuff, pack up,
+and head out.</p>
+</div>
+</div>
+<div id="prep-summary" class="section level1">
+<h1>Prep Summary</h1>
+<p>What we have:</p>
+<ul>
+<li>a hopefully sufficient idea of our setting</li>
+<li>a penciled sketch of local map</li>
+<li>a basic premis of what the first adventure’s task is</li>
+<li>a rough idea of what the first session will probably entail</li>
+<li>a bunch of misc stuff - maps and digital tools we probably won’t
+need as of now</li>
+</ul>
+<p><em>Total Prep Time before next session:</em> Seven hours of work,
+plus two days of “mulling things over for a while”.</p>
+<p>There’s a ton of stuff I could have prepped. Some of this are
+elements I <em>know</em> I can come up with on the fly (i.e. NPCs). Some
+of it I just don’t deem likely to come up, so I’m loathe to invest prep
+time. Ans some of it is stuff I <em>should</em> have prepped, but I’m
+out of time - and hey, no prep is ever perfect.</p>
+</div>
+<div id="play-report" class="section level1">
+<h1>Play Report</h1>
+<p>So… how did it go?</p>
+<p>What went right, what went wrong, and, most importantly, <em>what did
+I have to make up on the spot</em>?</p>
+<div id="meet-the-heroes" class="section level2">
+<h2>Meet the Heroes</h2>
+<p>We have</p>
+<ul>
+<li>Kai plays <strong>Kristoff</strong> (Human Sorcerer)</li>
+<li>Nick plays <strong>Nessia</strong> (Tiefling Paladin)</li>
+<li>Brian plays <strong>Brice</strong> (Human Wizard)</li>
+<li>Susan plays <strong>Suhee</strong> (Human Rogue)</li>
+</ul>
+<p>(All names changed, obviously - let’s hope I’ll be able to keep them
+straight.)</p>
+</div>
+<div id="house-rule-discussion" class="section level2">
+<h2>House Rule Discussion</h2>
+<p>I’ve got a list of house rules that have either already been
+established at our table or that I’d like to introduce for this
+campaign, so it’s time to discuss them:</p>
+<div id="longer-rest-times" class="section level3">
+<h3>Longer Rest Times</h3>
+<p>5e is balanced for 4+ (actually 6-8, I believe) encounters and ~2
+Short Rests per Long Rests - use less, and a lot of stuff falls out of
+whack.</p>
+<p>Knowing my playstyle, I tend to do one, maybe two resource-draining
+encounters per adventuring day.</p>
+<p>With this in mind, I decree that a Short Rest is a night’s sleep and
+a Long Rest is 24h of downtime (usable for downtime activities).</p>
+<p>Overall, since this doesn’t alter the intended encounter density of
+the game, it causes some raised eyebrows, but goes through without much
+discussion.</p>
+</div>
+<div id="narrative-group-initiative" class="section level3">
+<h3>Narrative Group Initiative</h3>
+<p>We’ve already used Group Initiative before, to smooth things
+over.</p>
+<p>All I do is add a slight twist:</p>
+<ul>
+<li>If it is clear from the narrative, which group should go first
+(i.e. the party stumbling, weapons drawn, into the Guard’s break room),
+the narrative decides which group goes first.</li>
+<li>Otherwise, the member with the highest average initiative of each
+group rolls intitiative for the whole group. If any group member has
+advantage on initiative rolls, they get to roll their own initiative
+once, too - if they can beat the first roll, their roll is used
+instead.</li>
+</ul>
+<p>Within their initiative, group members can go in any order. Issues
+concerning the duration of “until the beginning/end of your next turn”
+effects will be dealt with on an ad-hoc basis.</p>
+</div>
+<div id="power-attacks" class="section level3">
+<h3>Power Attacks</h3>
+<p>(This is stolen from <a
+href="https://www.youtube.com/watch?v=PbsTKreJwsk">treantmonk</a>)</p>
+<p>Any PC can apply “-5 to attack, +10 to damage” to any attack made
+with the <em>Attack Action</em>.</p>
+<p>(If you want to do this with a Bonus Action Attack, get <em>Polearm
+Master</em> / <em>Crossbow Expert</em>.)</p>
+</div>
+</div>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>Susan can’t make it today, so there’s just three players at the
+table.</p>
+<p>We review characters (all but Brice are the already-known PCs, scaled
+down to level three) and go over the setting a bit.</p>
+<p>Besides some minor clarification stuff, Brian asks why only the more
+exotic races are the result of divine meddling - why not apply this to
+all non-human races? It’d explain a lot of headscratchers (i.e. how are
+Humans and Elves related? They can interbreed, after all…) and I like
+it, so it’s canon now.</p>
+<p>Other than that, we nail down the in-world interpretation of
+everyone’s background (Kristoff is a mercenary Guild veteran, Brice
+&amp; Nessia are members of noble houses, but have joined the Guild
+recently; Everyone hails from the Broken Lands) and I give them the
+rundown on the quest:</p>
+<ul>
+<li>The Guild has apporached them, either via another member or via mail
+about unverified reports of a member going Rogue somewhere in the
+Castrix Province (name provided by Azgaar’s Map Algorithm),
+<em>probably</em> somewhere around Renemi.</li>
+<li>Their job is to travel to Renemi and find out what exactly happened.
+If they can solve the problem themselves, there’s a cash bonus, but when
+in doubt, they’re supposd to report back.</li>
+<li>Other Guild members are being sent to other regions within the
+province.</li>
+</ul>
+<p>With that (and any questions about it) done, we jump into them
+arriving in the city.</p>
+</div>
+<div id="relevant-events" class="section level2">
+<h2>Relevant Events</h2>
+<p>One of the first things Kai asks about is one I did not prep for:
+Does the Guild maintain Guild Houses in the cities it’s operating
+in?</p>
+<p>While this doesn’t fit with how I imagine the Guild operating (they
+don’t have the infrastructure nor manpower to do that), the idea of a
+gathering place for Guild members in the region seems plausible, so I
+decide that The Guild usually finds an inn with an agreeable, reliable
+owner and turns it into a semi-official contact place: If there’s Guild
+Members in the city, they tend to swing by, leave and get messages as
+well as a nice discount and helpful rumors to boot. Let’s call their
+chosen inn in Renemi the <em>White Tusk</em>.</p>
+<p>Beyond that, the session mostly meanders between the boundaries I’d
+suspected during prep - they visit the local governor
+(Mr. let-me-check-my-name-generator - a good opportunity to hand them my
+map), try to get an understanding of what kind of town this is and see
+if they can verify the reports they get from officials by independent
+means - talking to some of the veterans, trying to discreetly establish
+contact with the (now illegal) remnants of the Imperial cults that are
+bound to still exist somewhere and pour over the map, trying to decide
+where to go first.</p>
+<p>Not just one, but two of them inquire about hiring a reliable
+wilderness guide, so I direct them to an improvised semi-legal liquor
+den called the <em>Bucket</em>, where they manage to recruit the
+half-drunk grumpy Goblin.</p>
+<p>Overall, the (improvised) findings that might be relevant for the
+future are:</p>
+<ul>
+<li>The Iron Johan took two supply/relief convois shortly behind
+Immelgard, one and three months ago (for the record, it’s spring
+now)</li>
+<li>He’s a boastful character, always trying to appear of larger station
+than he genuinely is - spending generously, trying to mingle with
+nobility etc.</li>
+<li>His last legitimate, Guild-powered job was a long-time employment as
+an advisor in Bluewater (on the other side of the map)</li>
+<li>Most of the veterans don’t think much of their
+bethren-turned-bandits. They were soldiers tasked with
+<em>protecting</em> the civilian (imperial) populace, robbing them
+instead is dishonorable. Nevertheless, they’re hesitant to be truly
+helpful, those <em>are</em> their former comrades, after all</li>
+<li>The veterans come from a unit commonly just called the “4th
+Regiment” and were a unit of mostly Warg Handlers / Skirmishers.</li>
+<li>Many of the surviving Wargs have escaped to the wilderness and are a
+major danger on the road</li>
+</ul>
+<p>Overall, it was a rather routined start (my players have done things
+like this a hundred times), but it served well in allowing them to find
+their feet and get an idea of both the adventure and the setting.</p>
+</div>
+<div id="oopsies" class="section level2">
+<h2>Oopsies</h2>
+<p>Viewing this from a few weeks further down the road, I probably
+<em>should</em> have started the campaign with a strong scene - maybe a
+fight on the road. Nevertheless, it worked out well and can’t be
+changed.</p>
+<p>Also, right during the session, I see that Renemi lacks easy access
+to fresh water. Oops. Fortunately, none of my players bring this up, so
+I’ll have time to fix that.</p>
+</div>
+</div>
+<div id="discussion" class="section level1">
+<h1>Discussion</h1>
+<p>(I’ll add a link to the relevant Reddit thread for discussion once
+that’s up.)</p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

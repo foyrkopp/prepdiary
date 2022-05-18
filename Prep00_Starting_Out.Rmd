@@ -1,0 +1,508 @@
+---
+title: "Starting Out"
+output: html_document
+date: '2022-05-18'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Setup
+So, our current DM has announced that, for the foreseeable future, they won't have time to prep & run the campaign we'd started. It sucks, but that's life for you.
+
+Fortunately, I'd already mentioned that, in such an event, I'd be willing to jump in with a simple homebrew campaign. So now I've got to put my money where my mouth is.
+
+First session is in less than a week and, up to now, I've got nothing but a few idle musings.
+
+Crap.
+
+# Situation Review
+A few words about the peculiarities of my table:
+
+- This'll be an in-person game at a real table, not online
+- We've played a group of PCs to lvl 6 through official modules and multiple players have voiced strong preferences to keep those PCs.
+- We've played together for years, although not DnD.
+	- I know decently well what each player likes to get out of a game
+	- I know their playstyle and won't have to worry about potential weird/toxic behaviors random new players rarely but occasionally bring
+	- We recently had a discussion about what styles of campaigns they like, so I know what to aim for so that, even if not everyone gets their personal top preference, it's something they'll all get some enjoyment out of.
+
+**If those things are not clear without any doubt for your group, *talk about them* before doing anything else.**
+
+# Nailing down a campaign setting
+Creativity is a cat.
+
+If you call it by name, stare at it and expect it to Come Here Right Now, it'll ruffle it's nose at you and then slink away into some shadow dimension.
+
+But if you ignore it for a while and do something unrelated-yet-interesting, it'll suddenly - thump - land on your shoulder, curiously examining your doings, before walking all over your keyboard while shoving ~~it's butt~~ The Eye of Sauron into your face.
+
+So I force myself to give it a day or two before actually sitting down and *doing* anything. Just juggling idle thoughts whenever I'm not too occupied with normal life stuff.
+
+Anything below, until I explicitly state otherwise, was just stuff I found myself thinking about while doing household chores, driving, walking, not paying attention in meetings etc.
+
+It is also worth noting that, while, below, I break those thoughts down in neatly, topic-focused section, *coming up* with that stuff was a disjointed, all-over-the-place process.
+
+## Step 1 - What do we actually need?
+Since I want to minimze prep, I'd like to go with some sort of open world campaign, where the party themselves will set their goals more often than not.
+
+This means they won't be in permanent employment of a single faction (which can also be a fun campaign, but I did that recently), but indepent. And *this* means that, both to the heroes and to the people who might request their aid, just calling the cops to solve the problem should generally not be a feasible option.
+
+In my mind, there's generally two ways to go about this - either the centralized power is antagonistic and you don't *want* to involve them (your classic "corrupt state" scenario - *Shadowrun* and *Blades in the Dark* are based around this trope), or the centralized power is just not readily available (i.e. a frontier setting or one ravaged by some large scale desaster, war, etc.)
+
+Like mentioned, I'd already idly mused about the setting a bit before and know which book I want to adapt (see below) - and this particular one clearly lends itself to the latter approach.
+
+We'll *also* want a central conflict, some default source of tension. It'll not only lend our setting a distinct identity, but also serve as a crystallization seed for all kinds of narrative details, plots, NPC motivations etc.
+
+*Prep Time for this session*: None, this is stuff I already knew.
+
+*Total Prep Time for next session:* None / 2 days of "mulling it over a bit"
+
+## Step 2 - Choosing a template to steal from
+The above isn't exactly big news. Countless authors have worked along those lines. Let's steal from them.
+
+In this particular case, I had already considered turning Robert Jackson Benett's *City of Stairs* into a campaign setting somehow. (It's a great book, I recommend to read it.)
+
+So now it's time to actually do that, with the least amount of work possible.
+
+A few mangled words concerning what I remember and/or care about from the book(s) in terms of setting (sorry to the author):
+
+> Imagine a theocracy that's ruled not by the Clergy, but by their gods themselves. Physically manifest, very powerful gods, freely granting miracles, divine artifacts and powers to their flock, leading them in times of war, etc.
+>
+> Naturally, humans being humans, said theocracy wound up becoming an empire that brutally conquered, subjugated and exploited the other nations of the continent, who did not have this kind of divine backing.
+> 
+> This was the status quo throughout virtually all of known history - unitl one of those subjugated people invented a weapon that can slay gods.
+> 
+> One extremely ruthless liberation war and lots of fallen deities later, the former vasall states are flourishing, while the former empire is a failed state under foreign occupation by the very people they once subjugated themselves.
+> 
+> Even beyond the devastations and population losses by war, virtually all of their infrastructure, once powered by miracles, has broken down. Divine artifacts have stopped working, been confiscated or became, bereft of all safeguards, too hazarduous to utilize.
+
+There were more details on my mind, but I'll bring them up when they're relevant - for now, this should suffice.
+
+The idea is that most of the campaign will take place in the occupied territories of the fallen empire, let's call them the Broken Lands for now. Lots of strife and limited efficacy of government means there'll be lots of space for individual heroism, evil warlords rising to power, magical artifacts waiting to be found and political powderkegs to be lit, defused or leveraged.
+
+*Prep Time for this section:* None, I've already read the book.
+
+*Total Prep Time for next session:* None / 2 days of "mulling it over a bit"
+
+
+## Step 3 - How do the PCs fit into all of this?
+So now we have an environment that vaguely looks like a clichéd, blurred version of Afghanistan 2015.
+
+We also have a rough idea of what we imagine our party doing - exploring secrets, solving local problems, getting involved in political tensions etc.
+
+How do we enable them to do that? In my mind, the above will involve dealing with at least some of the local powers on a civilized and vaguely eye-to-eye level. Being hired, being invited to certain events, negotiating, stuff like that - even when the party starts out and has very little reputation.
+
+**Why would the mayor of Troubleville pay an advance to a bunch of strangers with no credentials or reputation and hope that they'll actually go and take care of that banditry problem?**
+
+In a world where quest boards are commonplace, the hiring of aspiring heroes is a well established practice. This, however, is a setting where most heavily armed strangers are assumed to be just as likely to rob you as to help you - or, at the very, least, take the advance you're paying them and vanish.
+
+(To many tables, this might seem like an irrelevant problem, but I know from experience that my players care about such small implausibilites - and this is a problem that seems fixable.)
+
+In short, I want a veneer of legitimacy for our party. Something that'd tell our hyptothetical mayor immediately that they can expect those budget Avengers to behave somewhat civilized, maybe even professional. And I don't want to hinge said legitimacy on a single PC who might have a respected background.
+
+Fortunately, there's a century old real-life solution to this problem: A guild.
+
+I don't want to ordain from the bat that the PCs are a straight-out mercenary group (because we already did that in another campaign). And I don't like the concept of an "adventurers guild" as seen in some tropes, because I don't think "adventurer" is something most people in the setting would consider an actual profession. But maybe we can adapt those concepts.
+
+All I *really* need is the public knowledge that their guild will vouch for these people behaving in a somewhat civilzed fashion and honoring their contracts (or else the guild itself will come after them). It smells a bit "mercenary", but I imagine it covering all sorts of specialist-for-hire, not just military ones.
+
+Why would our mayor trust that guild? Let's make it an old, respected concept.
+
+Maybe the guild has existed, in one form or another, for centuries. It has fallen a bit by the wayside during the reign of the Empire (because the Empire had it's own means of enforcing civilized behavior, adherence to contracts etc.). But the idea survived, in tales and maybe some derived traditions (i.e. the way certain oaths are sworn).
+
+And now, in a time when more immediate centralized authority is lacking, the guild has been revived and is experiencing sort of a renaissance.
+
+The baseline concept is that it's less strictly organized as a regular guild, and more focused on an oath sworn on a code of conduct. Swear to uphold said code and you get to wear the badge, which people will recognize and respect. Learn of someone with the badge breaking the code and you'll have to bring them to justice. Break the code yourself and the guild will send your peers after you.
+
+Until we come up with a better name, we'll just call it *The Guild*.
+
+*Prep Time for this section:* Maybe 15 minutes of random thoughts, strewn all over 2 days.
+
+*Total Prep Time for next session:* None / 2 days of "mulling it over a bit"
+
+## Step 4 - Adapting the setting for a DnD campaign
+### Technology
+In the books, the technology level is somewhere in the early 20th century, which is too much a headache for me in DnD terms.
+
+17th century sounds doable - saying that the victorious, "modern" states are routinely using flintlock weapons in their militaries, while those are rare and expensive in the Broken Lands, is a good baseline to give a "feel" to the state of technology.
+
+### Exploration
+While thinking about things, I stumble across a snag: I want my party to be able to explore places that are not yet (widely) known. But the Broken Lands are a former empire that was heavily populated for centuries - wouldn't virtually all of the immediately exploring long be done? There should be detailed imperial maps, right?
+
+So... let's say that the fall of the gods changed things somehow. Maps are no longer accurate. People remember things that aren't true. Either reality or recorded information has been altered, I don't need to decide which one yet, either way sounds cool.
+
+### Character Generation Options
+Besides the virtual superpowers granted by the now extinct(?) deities of the empire, I imagine most cultures having access to "regular" divine magics, so we won't do something drastic like banning Clerics.
+
+Concerning races, I'm a big fan of low-fantasy settings (and imagine this one as such), where I have trouble imagining most of the more exotic races fitting in.
+
+However, I know that one of my players will definitely want to carry over a Tiefling they're currently playing, so we'll need an idea of how those fit in.
+
+Fortunately, the classic fits well here: A ~~Wizard~~ Cleric did it. Some of the imperial Clerics tried to "improve" people according to some divine ideal by creating new subraces. God & Cleric are gone, the races still exist. Done.
+
+*Prep Time for this section:* Maybe 30 minutes of random thoughts, strewn all over 2 days.
+
+*Total Prep Time for next session:* None / 2 days of "mulling it over a bit"
+
+## Step 5 - Writing a Primer
+*Now* it is time to actually sit down and do some actual work.
+
+In particular, my players need an elevator pitch for the campaign so that they can either Yay or Nay it and think about how either their existing charactes might fit in or what new character they might play.
+
+This is what I'm sending to my players:
+
+(Keep in mind that this message was written way earlier than the document you're reading now, so some details are still in an earlier draft at this point.
+
+Also, don't mind the occasionally wooden wording, this is a direct translation from another language and reads better in the original.
+
+Player names, where mentioned, have been changed. Duh.)
+
+> **Short blurb concerning the setting:**
+> 
+> For (very long), the dominating continental superpower was a theocracy that owed it's supremacy to it's deities who not only interevened directly and personally in the world, but also granted fantastical supernatural powers to their followers - a high fantasy church-state, that conquered and exploited their neighboring countries with superior divine magic.
+> 
+> While those vasall states did not have equivalent divine support, they were much more technologically advanced.
+> 
+> Twenty years ago, the most advanced vasall state (a fantasy version of the terran ~17th century, including "normal" magic) found a way to kill gods.
+> 
+> The result was a long, bloody revolution with a predictable result, where the resentment of people subjugated for centuries broke free completely unchecked.
+> 
+> This war ended fiteen years ago.
+> 
+> While the liberated countries are busying themselves with a cultural and technological rennaissance, rather than working through the horrors of the war, the former territory of the collapsed theocracy is now formally a colony administrated by a coalition of former vasall states - and de facto a failed state, whose future is currently rather unclear: The Broken Lands.
+> 
+> 
+> **Short hook for the player characters:**
+> 
+> The setting for most of the campaign will, obviously, be the territory of the former theocracy.
+> 
+> The player characters are fortune-seekers (or mercenaries) that have banded together to, for whatever personal reasons, find fame, riches, power or knowledge in the Broken Lands.
+> 
+> Thus, you'll often find yourself solving the "problem of the week" (and being paid for it), but there'll also be plenty promising opportunites to pursue on your own initiative, if you care to do so - and, with time, an overarching plot should emerge as well.
+> 
+> You're not just a bunch of random Bobs with big blades and/or wands, but members of a loose, but far-reaching guild of fortune-seekers/mercenaries granting you a certain status: To become a member of the guild, one has to commit to a basic code of conduct and, in return, gets legal, organisational and, in an emergency, even financial backing. Whoever acts against the code, will be held accountable by the guild itself.
+> 
+> Due to the aforementioned code of conduct, and because the guild is not directly associated with any faction of the war, members are awareded a baseline of respect in most regions and are often hired to solve special problems.
+> 
+> The important takeaway here is that the guild won't dictate your goals or define your life, but it grants you a baseline of legitimacy.
+> 
+> (If any of you, i.e. Nessia, would rather be employed by a noble house instead of being an indepent guild member, this would be fine as well. I'd just like to avoid you being a band of heavily armed Vandals without any advocate.)
+> 
+> 
+> **Short draft of mechanical boundaries, this is negotiable:**
+> 
+> I'd like to downgrade the group to level three. I know, I know, higher levels = more cool stuff - but if we want to play somewhat consistentlly in this scenario, I'd prefer it if you don't already start out as heavyweights and level three seems like a good compromise for this (compared to level 1).
+> 
+> If you want to continue playing your old PC, this is (obviously) possible. If you want to keep playing them, but adapt some mechanical details, ditto.
+> 
+> If someone would like to play a new PC:
+> 
+> - For reasons of fairness, I'd keep the free level one feat the established PCs already have, but it's explictly possible to leave this one open and learn a fitting feat later, during actual gameplay.
+> 
+> -  The rule "Customize your Origin" (from one of the newer books) is permitted: Whoever wants, may move the ability bonuses of their race to another ability.
+> 
+> - Monk and Sorcerer will get a few bonuses to lift them to the level of other classes. If anyone wants to play one of those, talk to me, I wont be putting all of this in here. (Kai: For Kristoff, If you want to keep him, I'll type this into a separate mail.)
+> 
+> - The classes Twilight Cleric and Peace Cleric can't be chosen.
+> 
+> - No multiclassing at the beginning of the game. Later, during the campaign, it MAY be possible, but only if there's an opportunity within the narrative.
+> 
+> - "General" civilization consists of the "human-like" races (mostly Humans, but also Dwarves, Elfs, Halflings, Gnomes, Goliaths, Firbolgs etc.) and the assorted goblinoids. All other races (ecemptions negotiable) are the result of theocratic attempts to "improve" existing races and will have to live with corresponding prejudice, but can overcome it. Dragonborn and Tieflings constitute the largest populations of those "Godlings" in the Broken Lands.
+> 
+> Should you have an awesome concept that clashes with those boundaries, speak up, at this time everything is negotiable.
+> 
+> (From where I'm standing, you don't need to coordiniate for a "balanced" party. If we wind up with an all-Rogue or all-Cleric party, we'll find ways to make it work.)
+
+I get positive feedback quite quickly, so I know I can move on - even a
+
+> Yay, City of Stairs!
+
+from one of my players. Fortunately, I'm only stealing the setting, not the story, so I don't mind and am actually happy that my rambling reference was recognizable.
+
+*Prep Time for this section:* Maybe two hours, I tend to pour over long mails a lot.
+
+*Total Prep Time for next session*: Two hours.
+
+## Unneccessary Step 6 - I ~~need~~ want a world map
+I know I don't *need* much of a map - a quick sketch of the immediate surroundings would do - but I'd stumbled across the amazing [Azgaar's Fantasy Map Generator](https://azgaar.github.io/Fantasy-Map-Generator/) and wanted to give it a whirl. I mean, how hard can it be?
+
+Well, harder than I thought (I should have known), but still fairly easy overall.
+
+(This is not a complete waste of time, though. Auto-generated content is not always immediately usable by itself, but it's great fuel for creativity.)
+
+After familiarizing myself and fiddling a bit with the menus, I vaguely remember that, in the books, the leading state of the rebellious alliance was situated on a peninsula, which gives me a starting point - I switch the *heigthmap* option to "peninsula" and generate a few maps until I find one where the overall layout looks of the nations looks plausible.
+
+Then I discover the "Cultures" layer, which defines the naming of places and is great - but it triggers me to think about what the different cultures should "feel" like.
+
+Before doing that, I regenerate the culture layer, until one culture massively dominates most of the continental regions, this'll be the imperial culture (which spread all over the place).
+
+![Culture Map](images/safia_cultures.png)
+
+I like the idea of the old Empire being roman-themed, because that felt fitting to me in Skyrim, so I lock that in as their namespace.
+
+The algorithm  placed a dash of a people with a finnic namespace up north, who were part of the empire, that's interesting. Did they somehow preserve a cultural identity? If so, how? Or did just their naming traditions endure? Either way, I'm keeping them.
+
+Then I just slot in stuff that seems fun and plausible. A germanic namebase for the coastal region where a good chunk of the former vasall states are situated (including the aforementioned peninsula) and a greek one for a large southern island, that should do it - no need to go overboard.
+
+Lastly, I regenerate nations ("states"), provinces, rivers and cities ("burgs") again to apply the new namespaces, then do it over a few times until it looks right.
+
+![Nation Map](images/safia_nations.png)
+
+Somehow, the algorithm tends to split the region I consider the Empire's heartlands into two states (a very large and a large one), which frustrates me a bit, until I decide to embrace it.
+
+Maybe part of the empire seceeded during the rebellion, switching sides to ensure their survival? At this point, their gods would already have fallen and the Alliance would be distrustful of their loyalty, but the remains of their government would be able to stay in power, a thing that governments seem to prefer doing. So let's consider that canon for now.
+
+Done.
+
+The tool also has a bunch of stuff about diplomatic relationships, where I can define what state A thinks about state B, about where which military units are stationed, historical wars and much more, but I leave all of that alone.
+
+I *do* use it as an opportunity to think about the current relations of the Alliance members, though.
+
+Making them all a big, happy family would be a bit... *Star Trek*, so I insert some drama - *this* smallish country over here is actually a freshly seceeded province of *that* state and *those* neighbours helped them along. *These* people here and *those* over there both want to colonize (and maybe annex) that island down *here*, which the algorithm decreed to be virtually unpopulated, for it's resources - stuff like that.
+
+I don't bother writing any of this down, having it sloshing around in the back of my head will be enough until i need it to draw inspiration from.
+
+The last step is to fiddle a bit with colours and fonts until the map looks *cool*:
+
+![The full map](images/safia_fullmap.png)
+
+*Prep Time for this section*: Maybe three hours, although much of it was goofing around with the tool.
+
+*Total Prep Time for next session:* Five hours.
+
+## No More Steps - we're done with the setting
+For now, at least. I'm confiedent I've got enough input swirling around in my mind that I can present the world as a living, breathing place, and improvise unplanned details as needed.
+
+# Writing the First Adventure
+So... here we go. Everything so far pays into the campaign overall, but this is what we actually *need* to get started.
+
+## Step 1 - Getting a Rough Outline
+This is a part that, even if I'd tried to avoid it (I didn't), would have come up during my period of "mulling over" the campaign before actually sitting down and writing anything.
+
+What do we actually want?
+
+- Since our players know virtually nothing yet about the local events, locations etc. (as of now, neither do we) or even about the motivations of the other characters, it'd be difficult for them to define an opportunity to pursue on their own - so this'll be a job given to them by an NPC
+- A thing that's important to their characters, but, as of yet, poorly defined, is The Guild, so lets make it be relevant to the job
+
+From here, an obvious idea emerges - we, so far, know of only one occasion where The Guild takes direct action: When one of their members goes against The Code.
+
+We have not yet defined the The Code yet, so, at least viewed from a distance, the deed needs to be rather unambiguously bad. Let's say a member of The Guild has established somethelves as a local warlord and taken up banditry, taking people's stuff by force etc.
+
+I'm imagining guild member that came to the region from outside, maybe originating from somewhere in the Alliance, and going... bad, somehow.
+
+Let's call them... Johann Brahm. (During the first session, my players will be quick to point out that my subconscious probably meant [Johannes Brahms](https://en.wikipedia.org/wiki/Johannes_Brahms), but hey, what's done is done.) Being a bandit chief / warlord now, he likes to call himself "the Iron Johan".
+
+I don't see such a person waking up one morning and deciding to take over all the small bandit groups that undoubtedly already exist in the area - no, something much more plausible (to me) would be if he'd, for example, aligned himself with a part of the population that is usually destitute and whose most common reliable skill is violence - and then, things escalated somehow to a point where he took off with a bunch of them to "find a better life" or something, and ultimately, it all ended in banditry.
+
+Such a group is easy to come up with - there *was* a war, after all. Let's say that there was am imperial army hailing from another province in the region. They lost their battles and, when the war ended, many did not find their way home (or their home was lost to either the ravages of war or the slight... *reorganisation* of maps that followed The Fall).
+
+Now there's a lot of veterans in the area, many of them maimed, with no familiar ties to the local population, that are desperately trying to stay afloat in harsh times. The locals generally don't like them very much (this is the army that failed to protect them, now they're an economical burden and also, they're basically foreigners), so it's easy to imagine how the most desperate of them might be willing to take to banditry.
+
+I'm not thinking about a *solution* to the problem I've created, that's my players' job.
+
+*Prep Time for this section:* Beyond any musing had during the 2 days of "mulling things over a bit", maybe twenty minutes.
+
+*Total Prep Time before the next session:* Five hours, twenty minutes.
+
+## Step 2 - What Do we actually need?
+The first session will include some stuff that's not really gameplay:
+
+- Describing the setting in broad strokes and answering questions, so the players will have a rough idea of what their PCs know.
+- Going over character choices (**this should usually be done separately**, but I know my players very well.)
+- Giving them an intro of where they are and and what their initial task is.
+
+Once that's done, I'll have them arrive in the starting town. Knowing them, their first orders of business will probably look something like this:
+
+- verify some stuff about their understanding of the town with me
+- find a place to sleep
+- do some legwork and try to unearth some details about the Iron Johan
+  - they'll definitely try to talk to whoever is in charge here
+  - they'll try to get their hands on a map
+- formulate a basic plan for their next steps
+  - hire a guide, if necessary
+
+That'll be probably sufficient for the first session, if they swerve wildly off-course, I'll just have to improvise.
+
+*Prep Time for this section:* None, like I've said, I know my players very well so the above is immediately obvious to me.
+
+*Total Prep Time before next session:* Five hours, twenty minutes.
+
+## Step 3 - Putting the adventure on the map
+First order of business is to nail down a starting town somewhere in the Broken Lands - so I switch on the biomes view on my *Azgaar's* world map, find the colour that seems to roughly correlate to a central european environment (which is where I want to start), zoom in and scroll around a bit.
+
+Ultimately I find a nice town at the edge of my preferred biome, close to the open grassland, at the end of a trade route that seems like what I need. The algorithm named it *Renemi*, which'll do.
+
+*Azgaar's Fantasy Map Generator* is linked with *another* great map generator used for city maps, [Watabou's Medieval City Generator](https://watabou.github.io/city-generator/?size=15&seed=1027015709&greens=0&farms=1&citadel=1&urban_castle=0&plaza=1&temple=0&walls=1&shantytown=1&coast=0&river=1&gates=-1) and has already linked a city map for us. I fiddle with the generator's settings a bit and refresh the map until I'm happy, then change the link to my new version. This'll be helpful for the first session, but it's only a bonus and not crucial.
+
+![Renemi](images/renemi.png)
+
+When thinking about the regional map (which is the only map I *actually* need), I completely fail to realize that watabou has great generators for those as well (I'll learn about that later), so I just take out a sheet of blank paper and a pen.
+
+Looking at the zoomed-in world map, I put in Renemi on the eastern side, the trade route terminating there (so - a road) leading off the map and a meandering, line where the grasslands seem to begin - everything below that line is forests, meadows etc.
+
+Now let's fill that with a bit of stuff.
+
+Obviously, the party will want to know where the Iron Johann's raids are occuring.
+
+Logistically, they'll need to happen some place where there's stuff worth taking. I know that there's a larger city, Castrum (the province's capital) further off my map to the northwest, but, for some reason, the world map algorithm put no direct trade route leading there - so I'm inventing one, heading north into the plains and then turning northwest.
+
+I add a smaller city in the plains to that route, imagining it to trade in lots of grassland goods (wool, mammoth tusks and whatnot) and add a river cutting through the map from south to north to supply it with water. Reserving the roman naming scheme for places of imperial importance, I name the river Immel and the town Immelgard.
+
+Also, two villages - Isenfall directly on the river, Bluewater at the like-named lake, who's outflow connects to the Immel. The latter will be the place where Johann Brahm was gainfully employed before things went south, mostly because i need to put that pin *somewhere*, after all.
+
+There's still a bit too many empty spaces on the map, so I add a bog somewhere in the vicinity of the river and a mysterious-yet-dangerous place of interest, a devastated forest region of the no-one-who-went-there-came-back category I'm callin Worldsend, at the very west.
+
+That'll do - no need in overdoing it, just enough to make the map not seem empty and seed some stuff for the future.
+
+The resulting map looks like the scribbles of a preschooler, but my players are used to that kind of stuff.
+
+![Local Map](images/renemi_localmap.png)
+
+*Prep Time for this section:* An hour.
+
+*Total Prep Time before next session:* Six hours, twenty minutes.
+
+## Step 4 - Finishing Touches
+There's a few more details I'd like to add, just to have them handy.
+
+### Digital Toolbelt
+
+First, there's some tools I'd like to have within easy reach:
+
+- A [Weather Hexflower](https://www.reddit.com/r/osr/comments/omtd4g/4_season_weather_table_hex_easy_and_logical/) - I like introducing *some* unexpected elements into my stories, both as creativity seeds and as a reminder to my players that the world doesn't care about their plans and this'll do nicely.
+- A [Random Name Generator](https://www.fantasynamegenerators.com/roman_names.php), never leave home without it.
+- An [Irosnworn Oracle Website](https://ironsworn.glitch.me/) - an awesome tool for on-the-spot creativity prompts.
+
+*Prep Time for this section:* Twenty minutes, most of it spent finding a nice Hexflower, trying to print it, finding out that my printer is possessed by the printer devil and deciding to make do without a printed version.
+
+*Total Prep Time before next session:* Six hours, fourty minutes.
+
+### Optional Sidekick
+My party's current PCs have no wilderness survival skill whatsoever. While this tells me that I shouldn't go overboard with wilderness content, travel *should* be perilious.
+
+Fortunately, I know that *they* know this. I also know that, unless one of them shows up with a freshly generated wilderness specialist, they'll try to hire a local one.
+
+So let's sketch one out, just in case. And make them at least *somewhat* combat capable - they'll probably accompany the group for a while and should survive a standard encounter.
+
+I don't like to use a Ranger, because I don't want the Sidekick to have cool spells. I don't want to use a Rogue, because Rogues can be fairly strong before level 5 and we already have a Rogue.
+
+I've got a ranged Fighter concept lying around, a Goblin Battlemaster Archer based on using ranged maneuvers from hiding. Let's remove the Battlemaster stuff but keep the racial *Cunning Action*, make them a level lower than the party and refocus the skills on Survival, Nature and Medicine.
+
+I imagine him as an old-ish unkempt Goblin drunk named Truush, who's only in it for the booze money, won't risk his hide for the party, hides throughout combat (although may occasionally shoot his shortbow), but is knowledgeable about the area, the main roads, the animals, common monsters and whatnot and, above all, affordable with a reputation for being somewhat reliable.
+
+If a player shows up with those skills covered, but they'll still try to get some expert advice on the area, Truush will be willing to give them some tips, but unwilling to accompany them on their dangerous antics.
+
+*Prep Time for this section:* Twenty minutes, most of it fiddling with the "full PC" version of Truush for funsies, before cutting off all the bells and whistles anyway.
+
+*Total Prep Time before next session:* Seven hours.
+
+## No more steps - We're done
+Session is in just a few hours - I do some unrelated stuff, pack up, and head out.
+
+# Prep Summary
+What we have:
+
+- a hopefully sufficient idea of our setting
+- a penciled sketch of local map
+- a basic premis of what the first adventure's task is
+- a rough idea of what the first session will probably entail
+- a bunch of misc stuff - maps and digital tools we probably won't need as of now
+
+*Total Prep Time before next session:* Seven hours of work, plus two days of "mulling things over for a while".
+
+There's a ton of stuff I could have prepped. Some of this are elements I *know* I can come up with on the fly (i.e. NPCs). Some of it I just don't deem likely to come up, so I'm loathe to invest prep time. Ans some of it is stuff I *should* have prepped, but I'm out of time - and hey, no prep is ever perfect.
+
+# Play Report
+So... how did it go?
+
+What went right, what went wrong, and, most importantly, *what did I have to make up on the spot*?
+
+## Meet the Heroes
+We have
+
+- Kai plays **Kristoff** (Human Sorcerer)
+- Nick plays **Nessia** (Tiefling Paladin)
+- Brian plays **Brice** (Human Wizard)
+- Susan plays **Suhee** (Human Rogue)
+
+(All names changed, obviously - let's hope I'll be able to keep them straight.)
+
+## House Rule Discussion
+
+I've got a list of house rules that have either already been established at our table or that I'd like to introduce for this campaign, so it's time to discuss them:
+
+### Longer Rest Times
+
+5e is balanced for 4+ (actually 6-8, I believe) encounters and ~2 Short Rests per Long Rests - use less, and a lot of stuff falls out of whack.
+
+Knowing my playstyle, I tend to do one, maybe two resource-draining encounters per adventuring day.
+
+With this in mind, I decree that a Short Rest is a night's sleep and a Long Rest is 24h of downtime (usable for downtime activities).
+
+Overall, since this doesn't alter the intended encounter density of the game, it causes some raised eyebrows, but goes through without much discussion.
+
+### Narrative Group Initiative
+
+We've already used Group Initiative before, to smooth things over.
+
+All I do is add a slight twist:
+
+- If it is clear from the narrative, which group should go first (i.e. the party stumbling, weapons drawn, into the Guard's break room), the narrative decides which group goes first.
+- Otherwise, the member with the highest average initiative of each group rolls intitiative for the whole group. If any group member has advantage on initiative rolls, they get to roll their own initiative once, too - if they can beat the first roll, their roll is used instead.
+
+Within their initiative, group members can go in any order. Issues concerning the duration of "until the beginning/end of your next turn" effects will be dealt with on an ad-hoc basis.
+
+### Power Attacks
+
+(This is stolen from [treantmonk](https://www.youtube.com/watch?v=PbsTKreJwsk))
+
+Any PC can apply "-5 to attack, +10 to damage" to any attack made with the *Attack Action*.
+
+(If you want to do this with a Bonus Action Attack, get *Polearm Master* / *Crossbow Expert*.)
+
+## Introduction
+
+Susan can't make it today, so there's just three players at the table.
+
+We review characters (all but Brice are the already-known PCs, scaled down to level three) and go over the setting a bit.
+
+Besides some minor clarification stuff, Brian asks why only the more exotic races are the result of divine meddling - why not apply this to all non-human races? It'd explain a lot of headscratchers (i.e. how are Humans and Elves related? They can interbreed, after all...) and I like it, so it's canon now.
+
+Other than that, we nail down the in-world interpretation of everyone's background (Kristoff is a mercenary Guild veteran, Brice & Nessia are members of noble houses, but have joined the Guild recently; Everyone hails from the Broken Lands) and I give them the rundown on the quest:
+
+- The Guild has apporached them, either via another member or via mail about unverified reports of a member going Rogue somewhere in the Castrix Province (name provided by Azgaar's Map Algorithm), *probably* somewhere around Renemi.
+- Their job is to travel to Renemi and find out what exactly happened. If they can solve the problem themselves, there's a cash bonus, but when in doubt, they're supposd to report back.
+- Other Guild members are being sent to other regions within the province.
+
+With that (and any questions about it) done, we jump into them arriving in the city.
+
+## Relevant Events
+
+One of the first things Kai asks about is one I did not prep for: Does the Guild maintain Guild Houses in the cities it's operating in?
+
+While this doesn't fit with how I imagine the Guild operating (they don't have the infrastructure nor manpower to do that), the idea of a gathering place for Guild members in the region seems plausible, so I decide that The Guild usually finds an inn with an agreeable, reliable owner and turns it into a semi-official contact place: If there's Guild Members in the city, they tend to swing by, leave and get messages as well as a nice discount and helpful rumors to boot. Let's call their chosen inn in Renemi the *White Tusk*.
+
+Beyond that, the session mostly meanders between the boundaries I'd suspected during prep - they visit the local governor (Mr. let-me-check-my-name-generator - a good opportunity to hand them my map), try to get an understanding of what kind of town this is and see if they can verify the reports they get from officials by independent means - talking to some of the veterans, trying to discreetly establish contact with the (now illegal) remnants of the Imperial cults that are bound to still exist somewhere and pour over the map, trying to decide where to go first.
+
+Not just one, but two of them inquire about hiring a reliable wilderness guide, so I direct them to an improvised semi-legal liquor den called the *Bucket*, where they manage to recruit the half-drunk grumpy Goblin.
+
+Overall, the (improvised) findings that might be relevant for the future are:
+
+- The Iron Johan took two supply/relief convois shortly behind Immelgard, one and three months ago (for the record, it's spring now)
+- He's a boastful character, always trying to appear of larger station than he genuinely is - spending generously, trying to mingle with nobility etc.
+- His last legitimate, Guild-powered job was a long-time employment as an advisor in Bluewater (on the other side of the map)
+- Most of the veterans don't think much of their bethren-turned-bandits. They were soldiers tasked with *protecting* the civilian (imperial) populace, robbing them instead is dishonorable. Nevertheless, they're hesitant to be truly helpful, those *are* their former comrades, after all
+- The veterans come from a unit commonly just called the "4th Regiment" and were a unit of mostly Warg Handlers / Skirmishers.
+- Many of the surviving Wargs have escaped to the wilderness and are a major danger on the road
+
+Overall, it was a rather routined start (my players have done things like this a hundred times), but it served well in allowing them to find their feet and get an idea of both the adventure and the setting.
+
+## Oopsies
+
+Viewing this from a few weeks further down the road, I probably *should* have started the campaign with a strong scene - maybe a fight on the road. Nevertheless, it worked out well and can't be changed.
+
+Also, right during the session, I see that Renemi lacks easy access to fresh water. Oops. Fortunately, none of my players bring this up, so I'll have time to fix that.
+
+# Discussion
+
+(I'll add a link to the relevant Reddit thread for discussion once that's up.)

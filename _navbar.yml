@@ -1,0 +1,11 @@
+name: "Prep Diary"
+title: "Prep Diary"
+type: inverse
+left:
+  - text: "Entries"
+    menu:
+       - text: "Starting Out"
+         href: ./Prep00_Starting_Out.html
+right:
+  - icon: fa-github fa-lg
+    href: https://github.com/githubusername/mywebsite

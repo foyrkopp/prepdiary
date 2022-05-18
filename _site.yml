@@ -1,0 +1,10 @@
+name: "prepdiary"
+output_dir: 'docs'
+output:
+  html_document:
+    theme: default
+    highlight: zenburn
+    toc: true
+    toc_depth: 1
+    toc_float:
+      collapsed: true
